@@ -1,0 +1,34 @@
+# Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
+# Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
+# Config Docs: https://docs.deepwisdom.ai/main/en/guide/get_started/configuration.html
+# llm:
+#   api_type: 'spark'
+#   app_id: '98ec2cbc'
+#   api_key: 'aeda4169d81c8b53875b8edc247c3fc1'
+#   api_secret: 'NGM3YzE2NDk2MjhhN2RiZjg4Y2U1ZDhi'
+#   domain: 'generalv3'
+#   base_url: 'wss://spark-api.xf-yun.com/v3.1/chat'
+
+ZHIPUAI_API_KEY: '5112a841b0c04a62893b20062df320cf.ZZNiKiyvFf2VB9k8'
+
+llm:
+  api_type: 'zhipuai'
+  api_key: '5112a841b0c04a62893b20062df320cf.ZZNiKiyvFf2VB9k8'
+  model: 'glm-4-0520'
+
+search:
+  api_type: 'serper' # serpapi/google/serper/ddg
+  api_key: 'f20f39e8b8cd5c2d382a367d0713bce292f956f7'
+
+browser:
+  engine: 'playwright' # playwright/selenium
+  # for playwright engine, please check https://playwright.dev/python/docs/api/class-browsertype
+  # for selenium engine, please check https://www.selenium.dev/documentation/webdriver/browsers
+  browser_type: 'chromium' # playwright: chromium/firefox/webkit; selenium: chrome/firefox/edge/ie
+
+
+mermaid:
+  engine: 'nodejs' # nodejs/ink/playwright/pyppeteer
+  path: 'mmdc' # such as './node_modules/.bin/mmdc'
+  puppeteer_config: './config/puppeteer-config' # only for nodejs
+  pyppeteer_path: '/usr/bin/google-chrome-stable' # only for pyppeteer
